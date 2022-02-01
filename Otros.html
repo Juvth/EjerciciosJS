@@ -1,12 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios Varios</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Lineales</title>
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <ul
+      class="nav nav-tabs justify-content-center navbar-expand-lg navbar-dark bg-dark"
+    >
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Index.html">Página Principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Lineales.html">Lineales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Alternativos.html">Alternativos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="Repetitivos.html">Repetitivos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Otros</a>
+      </li>
+    </ul>
+
+    <div class="container pt-4">
+      <div class="card">
+        <div class="card-header">
+          <h1>Ejercicios Lineales</h1>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <!-- ********************EJERCICIO 1******************** -->
+            <li class="list-group-item">
+              <h3>Interfaz de voz</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 1
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Realizar el programa de interfaz de voz.
+                      </p>
+                      <br />
+                      <form name="formulario1">
+                        <center><input type="button" name="btnStar" id="id_iniciar_record" value="Escuchar" class="btn btn-outline-primary"></input>
+                        <input type="button" name="btnStop" id="id_detener_record" value="Detener" class="btn btn-outline-danger"></input>
+                        </center>
+                        <br>
+                        <ol id="recordingsList"></ol>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- ********************EJERCICIO 2******************** -->
+            <li class="list-group-item">
+              <h3>Cadenas</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 2
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Confeccione un programa que lea una oración e imprima cada una de las letras que aparecen en ella, con la cantidad de veces que aparecen escrito a su dereha. <br>
+                        Ejemplo: “ESE ES EL ERROR ”
+                      </p>
+                      <br />
+                      <form name="formulario2">
+                        <div class="form-group">
+                          <label class="form-label">Ingrese una frase: </label>
+                          <input
+                            type="text"
+                            name="frase"
+                            id="frase"
+                            min="1"
+                            required
+                          />
+                        </div>
+                        
+                        <div class="form-group">
+                            <center><label for="" name="resp" id="resp"></label><br></center>
+                        </div>
+                        
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="otros2()"
+                      >
+                        Calcular
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- ********************EJERCICIO 3******************** -->
+            <li class="list-group-item">
+              <h3>Random</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 3
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p align="justify">
+                        Realizar un programa que utilice la librería random. (valido como tarea de los parámetros del tercer parcial).<br>
+                        <center><strong>DADO MÁGICO</strong></center><br>
+                        Hola viajero! Necesitas un dado para continuar tu aventura. Selecciona el dado que necesites.
+                      </p>
+                      <form name="formulario3">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option hidden value>No necesito un dado</option>
+                              <option value="1" id="dado" name="1" onkeypress="random()">Dado de 6 lados</option>
+                              <option value="2" id="dado" name="2" onclick="random()">Dado de 10 lados</option>
+                              <option value="3" id="dado" name="3" onclick="random()">Dado de 20 lados</option>
+                            </select>
+                            <label for="floatingSelect">Selecciona un dado</label>
+                            <br><br>
+                            <div class="form-group">
+                                <center>
+                                    <label class="form-label">Respuesta: </label>
+                                    <label for="" name="rd" id="rd"></label><br
+                                </center>
+                                <label for="" name="resp" id="resp"></label><br>
+                            </center>
+                              </div>
+                            <img src="/img/Dado6.gif" class="img-thumbnail" alt="">
+                          </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/Otros.js"></script>
+    <script src="/js/validacion.js"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="/js/voz.js"></script>
+  </body>
 </html>

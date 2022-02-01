@@ -81,9 +81,25 @@
                           <br />
                           <form name="formulario1" class="container">
                             <div class="form-group">
-                                <label class="form-label">Ingrese el valor de a: </label>
-                                <input type="number" name="a" id="a" required>
+                                <label class="form-label">Cantidad de gasolina(lt) existente: </label>
+                                <input type="number" name="cantGasolina" id="cantGasolina" onkeypress="return soloNum(event);" required>
                             </div> 
+                            <div class="form-group">
+                              <label class="form-label">Despacho de gasolina(lt): </label>
+                              <input type="number" name="cantDespacho" id="Despacho" onkeypress="return soloNum(event);" required>
+                          </div> 
+                          <div class="form-group">
+                            <label class="form-label">Vehículos atendidos: </label>
+                            <input type="text" value="" name="vehiculos" id="vehiculos" disabled>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label">Dinero recaudado: </label>
+                          <input type="text" value="" name="recaudacion" id="recaudacion" disabled>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Mayor cantidad despachada: </label>
+                        <input type="text" value="" name="mayorDespacho" id="mayorDespacho" disabled>
+                    </div>
                           </form> 
                         </div>
                         <div class="modal-footer">
@@ -94,7 +110,7 @@
                           >
                             Cerrar
                           </button>
-                          <button type="button" class="btn btn-primary" onclick="validarCampos()">
+                          <button type="button" class="btn btn-primary" onclick="gasolinera()">
                             Calcular
                           </button>
                         </div>
@@ -105,7 +121,7 @@
       
               <!-- ********************EJERCICIO 2******************** -->
                 <li class="list-group-item">
-                  <h3>Raíces de ecuación cuadrática</h3>
+                  <h3>Curiosos números de dos cifras</h3>
                   <!-- Button trigger modal -->
                   <button
                     type="button"
@@ -133,27 +149,15 @@
                         </div>
                         <div class="modal-body">
                           <p>
-                            Confeccione un programa para calcular las raíces reales de una ecuación de la forma ax2 + bx +c
+                            Los números 46 y 96 tienen una curiosa propiedad su producto no se altera aunque las cifras que lo integran cambien de lugar: <br>
+                            46 x 96 = 4416<br>
+                            64 x 69 = 4416<br>
+                            Confeccione un programa para imprimir todos los números de dos cifras que cumplen con esta propiedad.   <br>                       
                           </p>
                           <br />
                           <form name="formulario2">
-                              <div class="form-group">
-                                  <label class="form-label">Ingrese el valor de a: </label>
-                                  <input type="number" name="a" id="a" required>
-                              </div>
-                              <div class="form-group">
-                                <label class="form-label">Ingrese el valor de b: </label>
-                                <input type="number" name="b" id="b" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Ingrese el valor de c: </label>
-                                <input type="number" name="c" id="c" required>
-                            </div>
-                              <div class="form-group">
-                                  <label class="form-label">Respuesta: </label>
-                                  <input type="text" value="" name="raiz1" id="raiz1" disabled>
-                                  <input type="text" value="" name="raiz2" id="raiz2" disabled>
-                              </div>
+                            <textarea id="numerosR" name="numerosR" style="width: 100%;height: 6rem;">
+                            </textarea>
                           </form> 
                         </div>
                         <div class="modal-footer">
@@ -164,7 +168,7 @@
                           >
                             Cerrar
                           </button>
-                          <button type="button" class="btn btn-primary" onclick="validarCampos2()">
+                          <button type="button" class="btn btn-primary" onclick="propiedadExtraña()">
                             Calcular
                           </button>
                         </div>
@@ -175,7 +179,7 @@
       
               <!-- ********************EJERCICIO 3******************** -->
                 <li class="list-group-item">
-                  <h3>Compañía de autos</h3>
+                  <h3>Números naturales</h3>
                   <!-- Button trigger modal -->
                   <button
                     type="button"
@@ -203,29 +207,14 @@
                         </div>
                         <div class="modal-body">
                           <p class="text-start">
-                            Una compañía dedicada al alquiler de automóviles cobra un monto fijo de $300000 para los primeros 300 km de recorrido. <br>
-                            Para más de 300 km y hasta 1000 km, cobra un monto adicional de $ 15.000 por cada kilómetro en exceso sobre 300. <br>
-                            Para más de 1000 km cobra un monto adicional de $ 10.000 por cada kilómetro en exceso sobre 1000. <br>
-                            Los precios ya incluyen el 20% del impuesto general a las ventas, IVA. Diseñe un programa que determine el monto a pagar por el alquiler de un vehículo y el monto incluido del impuesto.
+                            Confeccione un programa para hallar e imprimir los números naturales que cumplan simultáneamente las condiciones siguientes:<br>
+                            • Se encuentren entre 1200 y 2000.<br>
+                            • Tengan exactamente 4 divisores enteros positivos que son 1,5, otro número primo y el propio número.  <br>                        
                           </p>
                           <br />
                           <form name="formulario3">
-                              <div class="form-group">
-                                  <label class="form-label">Ingrese el total recorrido: </label>
-                                  <input type="number" name="Recorrido" id="Recorrido" min="0" required>
-                              </div>
-                              <div class="form-group">
-                                  <label class="form-label">Valor sin impuesto: </label>
-                                  <input type="text" value="" name="PrecioSinImpuesto" id="PrecioSinImpuesto" disabled>
-                              </div>
-                              <div class="form-group">
-                                <label class="form-label">Valor por impuesto: </label>
-                                <input type="text" value="" name="ValorImpuesto" id="ValorImpuesto" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Valor del recorrido con impuesto: </label>
-                                <input type="text" value="" name="ValorRecorrido" id="ValorRecorrido" disabled>
-                            </div>
+                            <textarea id="naturales" name="naturales" style="width: 100%;height: 8rem;">
+                            </textarea>
                           </form> 
                         </div>
                         <div class="modal-footer">
@@ -236,7 +225,7 @@
                           >
                             Cerrar
                           </button>
-                          <button type="button" class="btn btn-primary" onclick="validarCampos3()">
+                          <button type="button" class="btn btn-primary" onclick="naturales()">
                             Calcular
                           </button>
                         </div>
@@ -247,7 +236,7 @@
 
                 <!-- ********************EJERCICIO 4******************** -->
                 <li class="list-group-item">
-                  <h3>Suma Binaria</h3>
+                  <h3>Triángulo de Pascal</h3>
                   <!-- Button trigger modal -->
                   <button
                     type="button"
@@ -275,22 +264,15 @@
                         </div>
                         <div class="modal-body">
                           <p>
-                            Confeccione un programa para sumar dos números expresados en sistema binario teniendo en cuenta las reglas para efectuar la operación.
-                          </p>
+                            Confeccione un programa que imprima las k filas del triángulo de Pascal                          </p>
                           <br />
                           <form name="formulario4">
                               <div class="form-group">
-                                  <label class="form-label">Ingrese el primer valor: </label>
-                                  <input type="number" name="bin1" id="bin1" required>
+                                  <label class="form-label">Ingrese el número de filas: </label>
+                                  <input type="number" name="fila" id="fila" onkeypress="return soloNum(event);" required>
                               </div>
-                              <div class="form-group">
-                                <label class="form-label">Ingrese el segundo valor: </label>
-                                <input type="number" name="bin2" id="bin2" required>
-                            </div>
-                              <div class="form-group">
-                                  <label class="form-label">Respuesta: </label>
-                                  <input type="text" value="" name="sumaBin" id="sumaBin" disabled>
-                              </div>
+                              <textarea id="Pascal" name="Pascal" style="width: 100%;height: 6rem;">
+                              </textarea>
                           </form> 
                         </div>
                         <div class="modal-footer">
@@ -301,7 +283,7 @@
                           >
                             Cerrar
                           </button>
-                          <button type="button" class="btn btn-primary" onclick="validarCampos4()">
+                          <button type="button" class="btn btn-primary" onclick="Pascal()">
                             Calcular
                           </button>
                         </div>
@@ -319,7 +301,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/Alternativos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/Repetitivos.js"></script>
+    <script src="/js/validacion.js"></script>
+
   </body>
   
 </html>

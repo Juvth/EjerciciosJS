@@ -92,7 +92,6 @@ function validateandgetNumber() {
     } else {
         validateNumber(a, b, c, d, e);
     };
-    console.log("AQui estoy");
 };
 
 let a = document.getElementById("a")
