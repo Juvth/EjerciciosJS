@@ -255,7 +255,7 @@
                                   <input type="text" value="" name="PrecioSinImpuesto" id="PrecioSinImpuesto" disabled>
                               </div>
                               <div class="form-group">
-                                <label class="form-label">Valor del impuesto: </label>
+                                <label class="form-label">Valor por impuesto: </label>
                                 <input type="text" value="" name="ValorImpuesto" id="ValorImpuesto" disabled>
                             </div>
                             <div class="form-group">
@@ -272,7 +272,72 @@
                           >
                             Cerrar
                           </button>
-                          <button type="button" class="btn btn-primary" onclick="calcularValor()">
+                          <button type="button" class="btn btn-primary" onclick="validarCampos3()">
+                            Calcular
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- ********************EJERCICIO 4******************** -->
+                <li class="list-group-item">
+                  <h3>Suma Binaria</h3>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal4"
+                  >
+                    Ir al ejercicio!
+                  </button>
+      
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal4"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ejercicio 4
+                          </h5>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Confeccione un programa para sumar dos números expresados en sistema binario teniendo en cuenta las reglas para efectuar la operación.
+                          </p>
+                          <br />
+                          <form name="formulario4">
+                              <div class="form-group">
+                                  <label class="form-label">Ingrese el primer valor: </label>
+                                  <input type="number" name="bin1" id="bin1" required>
+                              </div>
+                              <div class="form-group">
+                                <label class="form-label">Ingrese el segundo valor: </label>
+                                <input type="number" name="bin2" id="bin2" required>
+                            </div>
+                              <div class="form-group">
+                                  <label class="form-label">Respuesta: </label>
+                                  <input type="text" value="" name="sumaBin" id="sumaBin" disabled>
+                              </div>
+                          </form> 
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                          <button type="button" class="btn btn-primary" onclick="validarCampos4()">
                             Calcular
                           </button>
                         </div>
