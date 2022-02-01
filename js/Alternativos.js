@@ -23,8 +23,8 @@ function getNota(nota){
 }
 
 function validarNota(nota){
-    if(nota < 0){
-        alert("La nota debe ser mayor a cero");
+    if(nota < 0 || nota > 100){
+        alert("La nota debe estar entre el rango de 0 a 100");
     }else{
         getNota(nota);
     }
