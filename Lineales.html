@@ -172,94 +172,102 @@
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        Ejercicio 2
-                      </h5>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        Confeccione un programa para leer un número e imprimir:
+                  <form name="formulario2">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Ejercicio 2
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Confeccione un programa para leer un número e imprimir:
+                          <br />
+                          • El antecesor <br />
+                          • El sucesor<br />
+                          • La parte entera de su raíz cuadrada<br />
+                          • La cantidad de cifras que tiene.<br />
+                        </p>
                         <br />
-                        • El antecesor <br />
-                        • El sucesor<br />
-                        • La parte entera de su raíz cuadrada<br />
-                        • La cantidad de cifras que tiene.<br />
-                      </p>
-                      <br />
-                      <form name="formulario2">
-                        <div class="form-group">
-                          <label class="form-label">Ingrese el numero: </label>
-                          <input
-                            type="number"
-                            name="numero"
-                            id="numero"
-                            min="1"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label">Antecesor: </label>
-                          <input
-                            type="text"
-                            value=""
-                            name="antecesor"
-                            id="antecesor"
-                            disabled
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label">Sucesor: </label>
-                          <input
-                            type="text"
-                            value=""
-                            name="sucesor"
-                            id="sucesor"
-                            disabled
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Parte entera de su raíz:
-                          </label>
-                          <input
-                            type="text"
-                            value=""
-                            name="partentera"
-                            id="partentera"
-                            disabled
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label">Cantidad de cifras: </label>
-                          <input
-                            type="text"
-                            value=""
-                            name="cifras"
-                            id="cifras"
-                            disabled
-                          />
-                        </div>
-                      </form>
+                        
+                          <div class="form-group">
+                            <label class="form-label">Ingrese el numero: </label>
+                            <input
+                              type="number"
+                              name="numero"
+                              id="numero"
+                              min="1"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Antecesor: </label>
+                            <input
+                              type="text"
+                              value=""
+                              name="antecesor"
+                              id="antecesor"
+                              disabled
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Sucesor: </label>
+                            <input
+                              type="text"
+                              value=""
+                              name="sucesor"
+                              id="sucesor"
+                              disabled
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Parte entera de su raíz:
+                            </label>
+                            <input
+                              type="text"
+                              value=""
+                              name="partentera"
+                              id="partentera"
+                              disabled
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Cantidad de cifras: </label>
+                            <input
+                              type="text"
+                              value=""
+                              name="cifras"
+                              id="cifras"
+                              disabled
+                            />
+                          </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                        <button
+                            type="reset"
+                            class="btn btn-warning"
+                          >
+                            Reiniciar
+                          </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          onclick="validarCampos2()"
+                        >
+                          Calcular
+                        </button>
+                      </div>
                     </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Cerrar
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        onclick="validarCampos2()"
-                      >
-                        Calcular
-                      </button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </li>
@@ -286,114 +294,122 @@
                 aria-hidden="true"
               >
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        Ejercicio 3
-                      </h5>
+                  <form name="formulario3">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Ejercicio 3
+                        </h5>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Dados 5 números de 5 cifras encontrar el 6 número de 5
+                          cifras también de la forma siguiente:<br />
+                          <strong>9</strong>4567 <br />
+                          2 <strong>8</strong>954 <br />
+                          36 <strong>5</strong>32 <br />
+                          456 <strong>6</strong>8 <br />
+                          6578 <strong>8</strong> <br />
+                          Número de 5 cifras: 98568<br />
+                        </p>
+                        <br />
+                        
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Ingrese el numero 1:
+                            </label>
+                            <input
+                              type="number"
+                              name="a"
+                              id="a"
+                              maxlength="5"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Ingrese el numero 2:
+                            </label>
+                            <input
+                              type="number"
+                              name="b"
+                              id="b"
+                              maxlength="5"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Ingrese el numero 3:
+                            </label>
+                            <input
+                              type="number"
+                              name="c"
+                              id="c"
+                              maxlength="5"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Ingrese el numero 4:
+                            </label>
+                            <input
+                              type="number"
+                              name="d"
+                              id="d"
+                              maxlength="5"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"
+                              >Ingrese el numero 5:
+                            </label>
+                            <input
+                              type="number"
+                              name="e"
+                              id="e"
+                              maxlength="5"
+                              required
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label">Respuesta: </label>
+                            <input
+                              type="text"
+                              value=""
+                              name="respuesta2"
+                              id="respuesta2"
+                              disabled
+                            />
+                          </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                        <button
+                          type="reset"
+                          class="btn btn-warning"
+                        >
+                          Reiniciar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          onclick="validateandgetNumber()"
+                        >
+                          Calcular
+                        </button>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                      <p>
-                        Dados 5 números de 5 cifras encontrar el 6 número de 5
-                        cifras también de la forma siguiente:<br />
-                        <strong>9</strong>4567 <br />
-                        2 <strong>8</strong>954 <br />
-                        36 <strong>5</strong>32 <br />
-                        456 <strong>6</strong>8 <br />
-                        6578 <strong>8</strong> <br />
-                        Número de 5 cifras: 98568<br />
-                      </p>
-                      <br />
-                      <form name="formulario3">
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Ingrese el numero 1:
-                          </label>
-                          <input
-                            type="number"
-                            name="a"
-                            id="a"
-                            maxlength="5"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Ingrese el numero 2:
-                          </label>
-                          <input
-                            type="number"
-                            name="b"
-                            id="b"
-                            maxlength="5"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Ingrese el numero 3:
-                          </label>
-                          <input
-                            type="number"
-                            name="c"
-                            id="c"
-                            maxlength="5"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Ingrese el numero 4:
-                          </label>
-                          <input
-                            type="number"
-                            name="d"
-                            id="d"
-                            maxlength="5"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label"
-                            >Ingrese el numero 5:
-                          </label>
-                          <input
-                            type="number"
-                            name="e"
-                            id="e"
-                            maxlength="5"
-                            required
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label class="form-label">Respuesta: </label>
-                          <input
-                            type="text"
-                            value=""
-                            name="respuesta2"
-                            id="respuesta2"
-                            disabled
-                          />
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Cerrar
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        onclick="validateandgetNumber()"
-                      >
-                        Calcular
-                      </button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </li>

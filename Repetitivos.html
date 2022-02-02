@@ -14,10 +14,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <ul class="nav nav-tabs justify-content-center navbar-expand-lg navbar-dark bg-dark">
+    <ul
+      class="nav nav-tabs justify-content-center navbar-expand-lg navbar-dark bg-dark"
+    >
       <li class="nav-item">
         <a class="nav-link text-white" href="Index.html">Página Principal</a>
       </li>
@@ -34,268 +36,355 @@
         <a class="nav-link text-white" href="Otros.html">Otros</a>
       </li>
     </ul>
-      <div class="container pt-4">
-        <div class="card">
-            <div class="card-header">
-              <h1>Ejercicios con estructuras repetitivas</h1>
-            </div>
-            <div class="card-body">
-              <ul class="list-group list-group-flush">
-      
-              <!-- ********************EJERCICIO 1******************** -->
-                <li class="list-group-item">
-                  <h3>Gasolinera</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Ir al ejercicio!
-                  </button>
-      
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Ejercicio 1
-                          </h5>
+    <div class="container pt-4">
+      <div class="card">
+        <div class="card-header">
+          <h1>Ejercicios con estructuras repetitivas</h1>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <!-- ********************EJERCICIO 1******************** -->
+            <li class="list-group-item">
+              <h3>Gasolinera</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 1
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        En una gasolinera se instala un detector para controlar
+                        la cantidad de litros de gasolina que va despachando el
+                        pistero. <br />
+                        Se conoce que al comenzar el turno de trabajo en el
+                        tanque de gasolina hay N litros. Confeccione un programa
+                        para conocer constantemente.<br />
+                        ✓ La cantidad de vehículos atendidos.<br />
+                        ✓ La cantidad de dinero recaudado si cada litro de
+                        gasolina especial cuesta $1,25 ctvos. de dólar.<br />
+                        ✓ Cuál es la mayor cantidad de gasolina despachada a un
+                        vehículo<br />
+                      </p>
+                      <br />
+                      <form name="formulario1" class="container">
+                        <div class="form-group">
+                          <label class="form-label"
+                            >Cantidad de gasolina(lt) existente:
+                          </label>
+                          <input
+                            type="number"
+                            name="cantGasolina"
+                            id="cantGasolina"
+                            onkeypress="return soloNum(event);"
+                            required
+                          />
                         </div>
-                        <div class="modal-body">
-                          <p>
-                            En una gasolinera se instala un detector para controlar la cantidad de litros de gasolina que va despachando el pistero. <br>
-                            Se conoce que al comenzar el turno de trabajo en el tanque de gasolina hay N litros. Confeccione un programa para conocer constantemente.<br>
-                            ✓ La cantidad de vehículos atendidos.<br>
-                            ✓ La cantidad de dinero recaudado si cada litro de gasolina especial cuesta $1,25 ctvos. de dólar.<br>
-                            ✓ Cuál es la mayor cantidad de gasolina despachada a un vehículo<br>
-                          </p>
-                          <br />
-                          <form name="formulario1" class="container">
-                            <div class="form-group">
-                                <label class="form-label">Cantidad de gasolina(lt) existente: </label>
-                                <input type="number" name="cantGasolina" id="cantGasolina" onkeypress="return soloNum(event);" required>
-                            </div> 
-                            <div class="form-group">
-                              <label class="form-label">Despacho de gasolina(lt): </label>
-                              <input type="number" name="cantDespacho" id="Despacho" onkeypress="return soloNum(event);" required>
-                          </div> 
-                          <div class="form-group">
-                            <label class="form-label">Vehículos atendidos: </label>
-                            <input type="text" value="" name="vehiculos" id="vehiculos" disabled>
+                        <div class="form-group">
+                          <label class="form-label"
+                            >Despacho de gasolina(lt):
+                          </label>
+                          <input
+                            type="number"
+                            name="cantDespacho"
+                            id="Despacho"
+                            onkeypress="return soloNum(event);"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label"
+                            >Vehículos atendidos:
+                          </label>
+                          <input
+                            type="text"
+                            value=""
+                            name="vehiculos"
+                            id="vehiculos"
+                            disabled
+                          />
                         </div>
                         <div class="form-group">
                           <label class="form-label">Dinero recaudado: </label>
-                          <input type="text" value="" name="recaudacion" id="recaudacion" disabled>
-                      </div>
-                      <div class="form-group">
-                        <label class="form-label">Mayor cantidad despachada: </label>
-                        <input type="text" value="" name="mayorDespacho" id="mayorDespacho" disabled>
+                          <input
+                            type="text"
+                            value=""
+                            name="recaudacion"
+                            id="recaudacion"
+                            disabled
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label"
+                            >Mayor cantidad despachada:
+                          </label>
+                          <input
+                            type="text"
+                            value=""
+                            name="mayorDespacho"
+                            id="mayorDespacho"
+                            disabled
+                          />
+                        </div>
+                      </form>
                     </div>
-                          </form> 
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-primary" onclick="gasolinera()">
-                            Calcular
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-      
-              <!-- ********************EJERCICIO 2******************** -->
-                <li class="list-group-item">
-                  <h3>Curiosos números de dos cifras</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2"
-                  >
-                    Ir al ejercicio!
-                  </button>
-      
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal2"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Ejercicio 2
-                          </h5>
-                        </div>
-                        <div class="modal-body">
-                          <p>
-                            Los números 46 y 96 tienen una curiosa propiedad su producto no se altera aunque las cifras que lo integran cambien de lugar: <br>
-                            46 x 96 = 4416<br>
-                            64 x 69 = 4416<br>
-                            Confeccione un programa para imprimir todos los números de dos cifras que cumplen con esta propiedad.   <br>                       
-                          </p>
-                          <br />
-                          <form name="formulario2">
-                            <textarea id="numerosR" name="numerosR" style="width: 100%;height: 6rem;">
-                            </textarea>
-                          </form> 
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-primary" onclick="propiedadExtraña()">
-                            Calcular
-                          </button>
-                        </div>
-                      </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="gasolinera()"
+                      >
+                        Calcular
+                      </button>
                     </div>
                   </div>
-                </li>
-      
-              <!-- ********************EJERCICIO 3******************** -->
-                <li class="list-group-item">
-                  <h3>Números naturales</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3"
-                  >
-                    Ir al ejercicio!
-                  </button>
-      
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal3"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Ejercicio 3
-                          </h5>
-                        </div>
-                        <div class="modal-body">
-                          <p class="text-start">
-                            Confeccione un programa para hallar e imprimir los números naturales que cumplan simultáneamente las condiciones siguientes:<br>
-                            • Se encuentren entre 1200 y 2000.<br>
-                            • Tengan exactamente 4 divisores enteros positivos que son 1,5, otro número primo y el propio número.  <br>                        
-                          </p>
-                          <br />
-                          <form name="formulario3">
-                            <textarea id="naturales" name="naturales" style="width: 100%;height: 8rem;">
-                            </textarea>
-                          </form> 
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-primary" onclick="naturales()">
-                            Calcular
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+                </div>
+              </div>
+            </li>
 
-                <!-- ********************EJERCICIO 4******************** -->
-                <li class="list-group-item">
-                  <h3>Triángulo de Pascal</h3>
-                  <!-- Button trigger modal -->
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal4"
-                  >
-                    Ir al ejercicio!
-                  </button>
-      
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal4"
-                    tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Ejercicio 4
-                          </h5>
-                        </div>
-                        <div class="modal-body">
-                          <p>
-                            Confeccione un programa que imprima las k filas del triángulo de Pascal                          </p>
-                          <br />
-                          <form name="formulario4">
-                              <div class="form-group">
-                                  <label class="form-label">Ingrese el número de filas: </label>
-                                  <input type="number" name="fila" id="fila" onkeypress="return soloNum(event);" required>
-                              </div>
-                              <textarea id="Pascal" name="Pascal" style="width: 100%;height: 6rem;">
-                              </textarea>
-                          </form> 
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Cerrar
-                          </button>
-                          <button type="button" class="btn btn-primary" onclick="Pascal()">
-                            Calcular
-                          </button>
-                        </div>
-                      </div>
+            <!-- ********************EJERCICIO 2******************** -->
+            <li class="list-group-item">
+              <h3>Curiosos números de dos cifras</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 2
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Los números 46 y 96 tienen una curiosa propiedad su
+                        producto no se altera aunque las cifras que lo integran
+                        cambien de lugar: <br />
+                        46 x 96 = 4416<br />
+                        64 x 69 = 4416<br />
+                        Confeccione un programa para imprimir todos los números
+                        de dos cifras que cumplen con esta propiedad. <br />
+                      </p>
+                      <br />
+                      <form name="formulario2">
+                        <textarea
+                          id="numerosR"
+                          name="numerosR"
+                          style="width: 100%; height: 6rem"
+                        >
+                        </textarea>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="propiedadExtraña()"
+                      >
+                        Calcular
+                      </button>
                     </div>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- ********************EJERCICIO 3******************** -->
+            <li class="list-group-item">
+              <h3>Números naturales</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 3
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-start">
+                        Confeccione un programa para hallar e imprimir los
+                        números naturales que cumplan simultáneamente las
+                        condiciones siguientes:<br />
+                        • Se encuentren entre 1200 y 2000.<br />
+                        • Tengan exactamente 4 divisores enteros positivos que
+                        son 1,5, otro número primo y el propio número. <br />
+                      </p>
+                      <br />
+                      <form name="formulario3">
+                        <textarea
+                          id="naturales"
+                          name="naturales"
+                          style="width: 100%; height: 8rem"
+                        >
+                        </textarea>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="naturales()"
+                      >
+                        Calcular
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- ********************EJERCICIO 4******************** -->
+            <li class="list-group-item">
+              <h3>Triángulo de Pascal</h3>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal4"
+              >
+                Ir al ejercicio!
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Ejercicio 4
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Confeccione un programa que imprima las k filas del
+                        triángulo de Pascal
+                      </p>
+                      <br />
+                      <form name="formulario4">
+                        <div class="form-group">
+                          <label class="form-label"
+                            >Ingrese el número de filas:
+                          </label>
+                          <input
+                            type="number"
+                            name="fila"
+                            id="fila"
+                            onkeypress="return soloNum(event);"
+                            required
+                          />
+                        </div>
+                        <textarea
+                          id="Pascal"
+                          name="Pascal"
+                          style="width: 100%; height: 6rem"
+                        >
+                        </textarea>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="Pascal()"
+                      >
+                        Calcular
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -304,7 +393,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/Repetitivos.js"></script>
     <script src="/js/validacion.js"></script>
-
   </body>
-  
 </html>

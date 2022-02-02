@@ -45,7 +45,8 @@ function soloNum10(ev) {
   }
 }
 
-(function ($) {//Añade la funcionalidad de maxlength a los inputs number 
+(function ($) {
+  //Añade la funcionalidad de maxlength a los inputs number
   methods = {
     /*
      * addMax will take the applied element and add a javascript behavior
