@@ -208,11 +208,11 @@
                       </p>
                       <form name="formulario3">
                         <div class="form-floating">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <select class="form-select" id="select" aria-label="Floating label select example" onchange="random();">
                               <option hidden value>No necesito un dado</option>
-                              <option value="1" id="dado" name="1" onkeypress="random()">Dado de 6 lados</option>
-                              <option value="2" id="dado" name="2" onclick="random()">Dado de 10 lados</option>
-                              <option value="3" id="dado" name="3" onclick="random()">Dado de 20 lados</option>
+                              <option value="1">Dado de 6 lados</option>
+                              <option value="2">Dado de 10 lados</option>
+                              <option value="3">Dado de 20 lados</option>
                             </select>
                             <label for="floatingSelect">Selecciona un dado</label>
                             <br><br>

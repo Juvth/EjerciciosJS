@@ -66,7 +66,7 @@ function alertdatosvacios(list_elements) {
 
 /*-----------------EJERCICIO 3-----------------*/
 function random(){
-    var id = document.getElementById("dado").value;
+    var id = document.getElementById("select").value;
     id = Number(id);
     
     if(id == 1){ 
