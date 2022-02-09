@@ -116,53 +116,17 @@ function propiedadExtraña() {
   document.getElementById("numerosR").innerHTML = texto;
 }
 
-/*function numero(){
-    var texto = '';
-    for(var i=10; i<=99; i++){
-        for(var j=10; j<=99; j++){
-            var aux1 = i;
-            var aux2 = j;
-            var aux3 = invertirDigitos(i);
-            var aux4 = invertirDigitos(j);
-            
-            if(!multOnce(aux1) && !multOnce(aux2) && !multOnce(aux3) && !multOnce(aux4)){
-                if(aux1*aux2 == aux3*aux4 && aux1 != aux2 && aux3 != aux4){
-                    texto += aux1 + "*" + aux2 + "=" + aux3 + "*" + aux4;  
-                }
-            }
-            texto += "\n"; 
-
-            
-        }
-    }
-    console.log(texto);
-    document.getElementById("numerosR").innerHTML = texto;
-}
-
-function multOnce(num){
-    if(num%11 == 0){
-        return true;
-    }else{
-        return false;
-    }
-}*/
-
 /*-----------------EJERCICIO 3-----------------*/
 function naturales() {
   var numeros = "";
 
   for (var numero = 1200; numero <= 2000; numero++) {
     var cant_divisores = 2;
-    for (var i = 2; i < numero; i++) {
-      if (numero % i == 0 || primo(numero)) {
-        if (i == 5) {
-          cant_divisores++;
-        } else {
-          cant_divisores++;
-        }
-      }
-    }
 
+    if(numero%5 == 0 && numero%7 == 0){
+      cant_divisores = 4;
+    }
+    
     if (cant_divisores == 4) {
       numeros += numero + ",";
     }
@@ -171,14 +135,6 @@ function naturales() {
   document.getElementById("naturales").innerText = numeros;
 }
 
-function primo(numero) {
-  for (var i = 2; i < numero; i++) {
-    if (numero % i === 0) {
-      return false;
-    }
-  }
-  return numero !== 1;
-}
 /*-----------------EJERCICIO 4-----------------*/
 function Pascal() {
   var n = (n = document.formulario4.fila.value);
