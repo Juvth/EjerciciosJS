@@ -46,8 +46,8 @@ function validarCampos2() {
 }
 
 function validarNumero(num) {
-  if (num < 1) {
-    alert("Los números deben ser mayores a cero");
+  if (num < 0) {
+    alert("Los números deben ser positivos o cero");
   } else {
     getCalculos(num);
   }
@@ -64,7 +64,12 @@ function getCalculos(num) {
   document.getElementById("antecesor").value = antecesor;
   document.getElementById("sucesor").value = sucesor;
   document.getElementById("partentera").value = partentera;
-  document.getElementById("cifras").value = cifras;
+  if(num == 0){
+    document.getElementById("cifras").value = "1";
+  }else{
+    document.getElementById("cifras").value = cifras;
+  }
+  
 }
 
 /*-----------------EJERCICIO 3-----------------*/
