@@ -15,7 +15,7 @@ function getLados(l1, l2, l3) {
 }
 
 function validarLados(l1, l2, l3) {
-  if (l1 < 1 || l2 < 1 || l3 < 0) {
+  if (l1 < 1 || l2 < 1 || l3 < 1) {
     alert("Los números deben ser mayores a cero");
   } else {
     getLados(l1, l2, l3);
